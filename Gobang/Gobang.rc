@@ -1,0 +1,265 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gobang.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Gobang"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_ICON1,IDC_STATIC,11,17,20,20
+    LTEXT           "Gobang 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+END
+
+IDD_GOBANG_DIALOG DIALOGEX 0, 0, 433, 296
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gobang"
+MENU IDR_MAIN_MENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,334,23,69,62
+    GROUPBOX        "Gobang",IDC_STATIC,307,7,119,282
+    PUSHBUTTON      "新游戏",IDC_NEW,311,91,42,40
+    PUSHBUTTON      "选项",IDC_OPTION,347,125,39,37
+    PUSHBUTTON      "悔棋",IDC_BACK,378,157,40,38
+    PUSHBUTTON      "关于",IDC_ABOUT,349,191,37,41
+    PUSHBUTTON      "退出",IDC_EXIT,320,227,39,41
+END
+
+IDD_DLGOPTION_DIALOG DIALOG DISCARDABLE  0, 0, 320, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选项"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "模式选择",IDC_STATIC,14,17,135,94
+    GROUPBOX        "AI等级",IDC_STATIC,167,19,135,94
+    PUSHBUTTON      "确定（&Y）",IDOK,165,133,50,16
+    PUSHBUTTON      "取消（&N）",IDCANCEL,237,133,50,17
+    CONTROL         "人先机后",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,26,40,45,10
+    CONTROL         "机先人后",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,26,58,
+                    45,10
+    CONTROL         "两人对弈",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,25,76,
+                    45,10
+    CONTROL         "低",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    181,39,23,10
+    CONTROL         "中",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,181,59,23,10
+    CONTROL         "高",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,181,76,23,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Gobang Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Gobang\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gobang.EXE\0"
+            VALUE "ProductName", "Gobang 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GOBANG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_DLGOPTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MASK                BITMAP  DISCARDABLE     "res\\mask.bmp"
+IDB_DEAD                BITMAP  DISCARDABLE     "res\\dead.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\gobang.bmp"
+IDB_CHESSBOARD          BITMAP  DISCARDABLE     "res\\chessboard.bmp"
+IDB_CHESS_BLACK         BITMAP  DISCARDABLE     "res\\qzBlack.bmp"
+IDB_CHESS_WHITE         BITMAP  DISCARDABLE     "res\\qzWhite.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "新游戏",                      ID_MENU_NEW
+    MENUITEM "选项",                        ID_MENU_OPTION
+    MENUITEM "悔棋",                        ID_MENU_BACK
+    MENUITEM "关于",                        ID_MENU_ABOUT
+    MENUITEM "退出",                        IN_MENU_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Gobang(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Gobang.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
